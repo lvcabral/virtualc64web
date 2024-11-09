@@ -39,3 +39,5 @@ index.html
 *.exe
 *.out
 *.app
+
+out/
