@@ -4,7 +4,7 @@
  */
 
  var vc64web_player={
-    vc64web_url: 'https://vc64web.github.io/',
+    vc64web_url: 'https://lvcabral.com/emulators/vc64/',
     listens: false,
     loadScript: async function (url, callback){
         var script = document.createElement("script")

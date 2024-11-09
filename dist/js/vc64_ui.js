@@ -944,14 +944,18 @@ joystick_keydown_map = {
     'ArrowDown':'PULL_DOWN',
     'ArrowLeft':'PULL_LEFT',
     'ArrowRight':'PULL_RIGHT',
-    'Space':'PRESS_FIRE'
+    'Space':'PRESS_FIRE',
+    'Enter':'PRESS_FIRE',
+    'MediaPlayPause':'PRESS_FIRE'
 }
 joystick_keyup_map = {
     'ArrowUp':'RELEASE_Y',
     'ArrowDown':'RELEASE_Y',
     'ArrowLeft':'RELEASE_X',
     'ArrowRight':'RELEASE_X',
-    'Space':'RELEASE_FIRE'
+    'Space':'RELEASE_FIRE',
+    'Enter':'RELEASE_FIRE',
+    'MediaPlayPause':'RELEASE_FIRE'
 }
 
 
@@ -2469,7 +2473,7 @@ $(`#choose_csdb_count a`).click(function ()
 
 //----
     webgl_switch = $('#webgl_switch');
-    var use_webgl=load_setting('use_webgl', false);
+    var use_webgl=load_setting('use_webgl', true);
     webgl_switch.prop('checked', use_webgl);
     if(use_webgl)
     {
